@@ -15,8 +15,8 @@ namespace BinaryFile
         double f;
         public BinaryTesting()
         {
-            i = 12;
-            n = "geeta";
+            i = 21;
+            n = "Pallavi";
             f = 34.4F * 34.5F;
         }
         public void WriteData()
@@ -36,7 +36,7 @@ namespace BinaryFile
             int i;
             double f;
             string n;
-            fs = new FileStream(@"F:\\BinaryFile.Dat", FileMode.Open, FileAccess.Read);
+            fs = new FileStream(@"C:\Users\HP\Desktop\.NetTraining\FilesIPIO\BinaryFile.Dat", FileMode.Open, FileAccess.Read);
             BinaryReader br = new BinaryReader(fs);
             i = br.ReadInt32();
             f = br.ReadDouble();
